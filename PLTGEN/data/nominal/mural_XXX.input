@@ -1,0 +1,44 @@
+<INPUT_DATA_FILE_NAMES_START>
+   Miscellaneous Input Data File     : mural_misc_XXX.input
+   Ground Station Input Data File    : mural_gs.input
+   Relay Satellite Input Data File   : mural_rs.input
+   User Vehicle Input Data File      : mural_uv_name.input
+   Region Input Data File            : regions2.input
+<INPUT_DATA_FILE_NAMES_END>
+
+<INPUT_FILE_NAMES_START>
+   Position Input File             : positions_XXX.input
+   Crosslink Input File            : crosslinks_XXX.input
+   Downlink Direct Input File      : directDownlinks_XXX.input
+   Self Relaying Link Input File   : selfRelayingLinks_XXX.input
+   Downlink Input File             : downlinks_XXX.input
+   Multihop Link Input File        : multihopLinks_XXX.input
+   UPA Conjunction Input File      : conjunctionUPA_XXX.input
+   RF Conjunction Input File       : conjunctionRF_XXX.input
+   Value Timeline Input File       : timeline_XXX.input
+<INPUT_FILE_NAMES_END>
+
+<OUTPUT_FILE_NAMES_START>
+   Main Output File                      : mural_XXX.mrl
+#   Data Provider Position Output File    : positions_XXX.out
+#   Revolution Times Output File          : revolutionTimes_XXX.out
+#   Updated Orbit Parameters Output File  : updatedOrbits_XXX.out
+#   Crosslink Output File                 : crosslinks_XXX.out
+#   Downlink Output File                  : downlinks_XXX.out
+#   Downlink Direct Output File           : directDownlinks_XXX.out
+#   Multihop Link Output File             : multihopLinks_XXX.out
+#   Self Relay Link Output File           : selfRelayLinks_XXX.out
+#   UPA Conjunction Output File           : conjunctionUPA_XXX.out
+#   RF Conjunction Output File            : conjunctionRF_XXX.out
+#   Value Timeline Output File            : timeline_XXX.out
+#   Regions In View Output File           : regionsInView_XXX.out
+<OUTPUT_FILE_NAMES_END>
+
+<DEBUG_FILE_NAMES_START>
+#   Links Debug File                       : links_XXX.debug
+#   Conjunction Debug File                 : conjunction_XXX.debug
+#   Value Timeline Debug File              : detailedValt_XXX.debug
+#   FOR Region Inview Debug File           : forRegionInview_XXX.debug
+#   FOR Azimuth Elevation Debug File       : forAzimuthElevation_XXX.debug
+#   Elevation Factor Debug File            : elevationFactor_XXX.debug
+<DEBUG_FILE_NAMES_END>

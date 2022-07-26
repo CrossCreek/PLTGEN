@@ -1,0 +1,68 @@
+<ACTIVE_CONSTELLATION_START>
+   User Vehicles       : type names from input files here
+   Relay Satellites    : type names from input files here
+   Ground Stations     : type names from input files here
+   Sort Data Providers : true
+<ACTIVE_CONSTELLATION_END>
+
+<INPUT_PARAMETERS_START>
+   Last Module To Complete (PG/LPG/VTG/RG/RA/TS)    : RA
+   Use Sub Regions For Requirements                 : false
+   Input Angle Units (DEG/RAD/GRAD)                 : DEG
+   Input Distance Units (M/KM/FT/MI/NMI)            : NMI
+   Input Time Units (HR/MN/SEC/TS)                  : MN
+   Input Reference Frame (ECF/ECI/LLA)              : LLA
+<INPUT_PARAMETERS_END>
+
+<OUTPUT_PARAMETERS_START>
+   Output Angle Units (DEG/RAD/GRAD)          : DEG
+   Output Distance Units (M/KM/FT/MI/NMI)     : NMI
+   Output Time Units (HR/MN/SEC/TS)           : MN
+   Output Reference Frame (ECF/ECI/LLA)       : LLA
+<OUTPUT_PARAMETERS_END>
+
+<TIME_PIECE_START>
+   Start Date                : STYR/MONTY1/DAYBEF
+   Start Time                : 23:35:00
+   End Date                  : ENYR/MONTY2/DAYAFT
+   End Time                  : 00:14:00
+   Seconds Per Time Step     : 60
+   Day Boundary Offset Start : 25
+   Day Boundary Offset End   : 15
+   Leap Second File Name     : LeapSecondsOF.input
+<TIME_PIECE_END>
+
+<LINK_GENERATION_START>
+#   Additional Check Seconds  : 59.0
+<LINK_GENERATION_END>
+
+<TARGET_PARAMETERS_START>
+   Optical Priority Factor Coefficient : 0.18
+   Optical Priority Factor Exponential : 1.39
+   Use Full Optical Score Equation     : true
+   Radar Priority Factor Coefficient   : 0.021
+   Radar Priority Factor Exponential   : 1.77827942
+   Area Factor                         : 225.0
+   Spectral Quality Bins               : 0.25, 0.5, 1.0, 2.0, 4.0, 8.0, 20.0, 50.0, 100.0
+   Deck File Base Directory            : path to decks
+   Print Deck As Requirements          : false
+   Effectivity (MO/MAD/ALL)            : MO
+   Sub Priority Level Threshold(s)     : 999
+#   Sub Priority Level Threshold(s)     : 899, 999
+#   Country Code Factor [0.01]         : 
+#   Country Code Factor [0.1]          : 
+<TARGET_PARAMETERS_END>
+
+#<CRISIS_INPUT_START>
+
+#   <CRISIS_AREA_BEGIN>
+#      Crisis Area Identification           : 1
+#      Crisis Area Label                    : Name
+#      Crisis Region Numbers                : WAC NUmbers
+#      User Vehicles                        : ALL
+#      Default Timeline Score Multiplier    : 100.0
+#        Timeline Score Multiplier [User]  : 0.0
+#   <CRISIS_AREA_STOP>
+
+#<CRISIS_INPUT_END>
+

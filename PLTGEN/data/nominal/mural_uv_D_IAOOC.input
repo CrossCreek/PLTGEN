@@ -1,0 +1,103 @@
+<USER_VEHICLE_OBJECT_START>
+   Data Provider Designator             : XYZ-1
+   Data Provider Type                   : XXX
+   Data Provider System                 : Systemx
+   Data Provider Group                  : xxx
+   Body Tilts For Collection            : true
+   Direct Downlink                      : false
+   Target Deck File Name                : Target.deck
+   Daily Vehicle Duty Cycle             : 400 	
+   Collection Efficiency                : 0.5
+   Buffer Memory Size (Gbits)           : 50.0  
+   Effective Buffer Empty Rate          : 1.2
+   Vehicle Priority                     : 3
+   Azimuth Offset Angles                : 0.0, -90.0, 180.0, 90.0
+   Worth Normalization X Factor         : 1.0
+   Worth Normalization Y Factor         : 1.0
+
+   <SENSOR_OBJECT_BEGIN>
+      Sensor Type (VIS/LW/SAR/MSR/MSE/USR/USE/HSR/HSE/WFOV) : SAR
+      Collection Data Rate (Gbits/sec)                          : 1.0
+      Requirement Deck File Name                                : Requirement.deck
+
+
+     <ACCESS_PATTERN_OBJECT_BEGIN>                          
+         Access Pattern Type (CONE/DONUT/BFLY/AXE) : BFLY
+         Default Outer Cone Elevation Angle        : 10.0
+         Default Inner Cone Elevation Angle        : 50.0
+         Broadside Angle (Squint or Doppler Cone)  : 30.0
+         Always Include Sub Satellite Region       : false
+      <ACCESS_PATTERN_OBJECT_STOP>
+
+      Sensor Weight Factor              : 100.0
+      Default Collection Rate (nmi^2/s) :  0.001
+        Collection Rate [POINT]         :  0.476,0.476,0.166,0.132,0.094,0.076,0.055,0.027,0.001
+        Collection Rate [AREA]          :   22.8, 22.8, 11.4,  5.7,  4.9,  3.3
+      Resource Weight                   :    1.0,  1.0,  1.2,  2.4,  4.8,  9.6, 19.2, 32.0, 32.0
+      NRIS D1                           : 5.1635
+      NRIS D2                           : 0.11497
+      NRIS D3                           : 0.00175
+      NRIS D4                           : 0.000
+      NRIS D5                           : 0.04737
+      NRIS D6                           : 0.00044
+      Image Product Resolution          : 0.5
+   <SENSOR_OBJECT_STOP>
+
+   <USER_TRANSMIT_ANTENNA_BEGIN>
+      Communication Frequency Band                            : X_BAND
+      Capacity                                                : 1
+      Data Rate (Gbits/sec)                                   : 1.0
+      Preparation Time                                        : 1
+      Default Maximum Elevation Angle                         :  180.0
+      Default Minimum Elevation Angle                         : -180.0
+      Default Minimum Grazing Altitude                        : 60.0
+      Default Maximum Range                                   : 999999.0
+      Default Minimum Range                                   : 0.0
+      Default Maximum Sun Separation Angle                    : 180.0
+      Default Minimum Sun Separation Angle                    : 0.0
+      Gimbal Frame Offset Angle                               : -42.1 
+      Azimuth Based Elevation Angles (az, min el, max el)     : -180.0,  0.0, 55.0
+      Azimuth Based Elevation Angles (az, min el, max el)     : -55.0,  0.0, 55.0
+      Azimuth Based Elevation Angles (az, min el, max el)     : -54.9, 17.1, 55.0
+      Azimuth Based Elevation Angles (az, min el, max el)     : 54.9, 17.1, 55.0
+      Azimuth Based Elevation Angles (az, min el, max el)     : 55.0,  0.0, 55.0
+      Azimuth Based Elevation Angles (az, min el, max el)     : 60.0,  0.0, 55.0
+      Azimuth Based Elevation Angles (az, min el, max el)     : 60.1,  7.9, 55.0
+      Azimuth Based Elevation Angles (az, min el, max el)     : 119.9,  7.9, 55.0
+      Azimuth Based Elevation Angles (az, min el, max el)     : 120.0,  0.0, 55.0
+      Azimuth Based Elevation Angles (az, min el, max el)     : 180.0,  0.0, 55.0
+      Minimum Gimbal Stop Angle                               : -125.0
+      Maximum Gimbal Stop Angle                               :  125.0
+      Cable Wrap Offset Angles                                :   0.0, 180.0
+   <USER_TRANSMIT_ANTENNA_STOP>
+
+   <POSITION_GENERATION_BEGIN>
+      Orbiting Data Provider                                  : true
+      Position Generation Method (READ_MURAL/_OPS/_P470/J2J4) : J2J4
+      Epoch Date                                              : 2010/03/21
+      Epoch Time                                              : 00:00:00
+      Semi-Major Axis                                         : 4000.0
+      Eccentricity                                            : 0.00
+      Inclination                                             : 100.0
+      Argument of Perigee                                     : 0.00
+      Right Ascension                                         : 0.00
+      True Anomaly                                            : 0.00
+      Revolution Boundary                                     : ASCENDING_NODE
+      Revolution Number Offset                                : 0
+   <POSITION_GENERATION_STOP>
+
+   <LINK_GENERATION_BEGIN>
+      Link Path Method (READ/GENERATE)                        : GENERATE
+      Default Acquire Time                                    : 3
+      Default Droplink Time                                   : 0
+      Maximum Maneuver Time                                   : 1
+   <LINK_GENERATION_STOP>
+
+   <VALUE_TIMELINE_GENERATION_BEGIN>
+      Value Timeline Generation Method (READ/MVR/TCA/REGION)  : MVR
+      Type Of Deck (NONE/TARGET/REQUIREMENT/BOTH)             : BOTH
+      Time To Collect Reset                                   : 1440
+   <VALUE_TIMELINE_GENERATION_STOP>
+
+<USER_VEHICLE_OBJECT_END>
+

@@ -1,0 +1,34 @@
+<GROUND_STATION_OBJECT_START>
+   Data Provider Designator                  : Ground1
+   Data Provider Type                        : GS
+   Data Provider System                      : COMM
+
+   <RECEIVE_FACILITY_ANTENNA_BEGIN>
+      Communication Frequency Band                     : KA_BAND
+      Capacity                                         : 3
+      Data Rate (Gbits/sec)                            : 2.0
+      Preparation Time                                 : 5
+      Default Minimum Elevation Angle                  :  5.0
+      Default Maximum Elevation Angle                  : 77.0
+      Default Minimum Sun Separation Angle             :   0.0
+      Default Maximum Sun Separation Angle             : 360.0
+   <RECEIVE_FACILITY_ANTENNA_STOP>
+
+   <POSITION_GENERATION_BEGIN>
+      Orbiting Data Provider                              : false
+      Position Generation Method (READ/STATIONARY/MOVING) : STATIONARY
+      Latitude                                            : 30.74
+      Longitude                                           : 280.84
+      Altitude                                            : 3444.0
+#      Initial Layover Time Steps                          : 1460
+   <POSITION_GENERATION_STOP>
+
+   <LINK_GENERATION_BEGIN>
+      Conjunction Method (READ/GENERATE)                      : GENERATE
+      Default Narrowband Conjunction Angle                    :  3.0
+#      Default Narrowband Conjunction Angle, Senders           :  5.0, 3
+#      Default Wideband Conjunction Angle                      : 2.0
+   <LINK_GENERATION_STOP>
+
+<GROUND_STATION_OBJECT_END>
+

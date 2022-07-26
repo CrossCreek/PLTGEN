@@ -1,0 +1,73 @@
+<USER_VEHICLE_OBJECT_START>
+   Data Provider Designator             : DDLUser
+   Data Provider Type                   : text
+   Data Provider System                 : text1
+   Data Provider Group                  : text2
+   Body Tilts For Collection            : true
+   Direct Downlink                      : false
+   Target Deck File Name                : deckfile.path
+   Daily Vehicle Duty Cycle             : 1440
+   Collection Efficiency                : 0.25
+   Buffer Memory Size (Gbits)           : 500.0
+   Effective Buffer Empty Rate          : 1.0
+   Vehicle Priority                     : 3
+   Worth Normalization X Factor         : 1000.0
+   Worth Normalization Y Factor         : 1.0
+
+   <SENSOR_OBJECT_BEGIN>
+      Sensor Type (VIS/SPC/LW/SAR/MSR/MSE/USR/USE/HSR/HSE/WFOV) : Select
+      Collection Data Rate (Gbits/sec)                          : 3.0
+      Requirement Deck File Name                                : Requirement.deck
+
+      <ACCESS_PATTERN_OBJECT_BEGIN>
+         Access Pattern Type (CONE/DONUT/BFLY/AXE) : CONE
+         Default Outer Cone Elevation Angle        : 10.0
+         Always Include Sub Satellite Region       : false
+      <ACCESS_PATTERN_OBJECT_STOP>
+
+      Sensor Weight Factor              : 1
+    
+    <SENSOR_OBJECT_STOP>
+
+   <DIRECT_DOWNLINK_ANTENNA_BEGIN>
+      Antenna Designator                                 : DDL1
+      Communication Frequency Band                       : L_BAND
+      Capacity                                           : 1
+      Data Rate (Gbits/sec)                              : 1.0
+      Number Of Transmit Channels                        : 1
+      Default Minimum Range                              : 0.0
+      Default Maximum Range                              : 99999.0
+      Default Minimum Sun Separation Angle               : 0.0
+      Default Maximum Sun Separation Angle               : 180.0
+      Precluded Receiver                                 : 
+   <DIRECT_DOWNLINK_ANTENNA_STOP>
+
+   <POSITION_GENERATION_BEGIN>
+     Orbiting Data Provider     : true
+     Position Generation Method : J2J4
+     Epoch Date                                              : yyyy/mm/dd
+     Epoch Time                                              :   00:00:00
+     Semi-Major Axis                                         : sma value
+     Eccentricity                                            : 0.00000100
+     Inclination                                             :    88.0000
+     Right Ascension                                         :   0.0000
+     Argument of Perigee                                     :     0.0000
+     True Anomaly                                            :    00.0000
+     Revolution Boundary        : SOUTH_POINT
+     Revolution Number Offset   :     0
+    <POSITION_GENERATION_STOP>
+
+   <LINK_GENERATION_BEGIN>
+      Link Path Method (READ/GENERATE)                        : GENERATE
+      Default Acquire Time                                    : 1
+      Default Droplink Time                                   : 1
+   <LINK_GENERATION_STOP>
+
+   <VALUE_TIMELINE_GENERATION_BEGIN>
+      Value Timeline Generation Method (READ/MVR/TCA/REGION)  : MVR
+      Type Of Deck (NONE/TARGET/REQUIREMENT/BOTH)             : REQUIREMENT
+      Time To Collect Reset                                   : 1
+      Generate Resource Specific Timeline                     : false
+   <VALUE_TIMELINE_GENERATION_STOP>
+
+<USER_VEHICLE_OBJECT_END>

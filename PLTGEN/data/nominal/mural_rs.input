@@ -1,0 +1,121 @@
+<RELAY_SATELLITE_OBJECT_START>
+   Data Provider Designator                                   : name
+   Data Provider Type                                         : Type
+   Data Provider System                                       : System
+
+   <USER_POINTING_ANTENNA_BEGIN>
+      Antenna Designator                                      : ALL
+# Frequency bands include X_BAND,MA_X_BAND,S_BAND,MA_S_BAND,V_BAND,K_BAND,MA_K_BAND,KU_BAND,MA_KU_BAND,KA_BAND,MA_KA_BAND,UHF,VHF,EHF,LASER,MA_LASER
+      Communication Frequency Band                            : S_BAND
+      Capacity                                                : 2
+      Data Rate (Gbits/sec)                                   : 1.0
+      Preparation Time                                        : 2
+      Default Minimum Elevation Angle                         : -180.0
+      Default Maximum Elevation Angle                         :  180.0
+      Azimuth Based Elevation Angles (az, min el, max el)     : -180.00,   0.0,   0.0 
+      Azimuth Based Elevation Angles (az, min el, max el)     :  -15.01,   0.0,   0.0 
+      Azimuth Based Elevation Angles (az, min el, max el)     :  -15.00, -40.0, -20.0 
+      Azimuth Based Elevation Angles (az, min el, max el)     :   15.00, -40.0, -20.0  
+      Azimuth Based Elevation Angles (az, min el, max el)     :   15.01,   0.0,   0.0 
+      Azimuth Based Elevation Angles (az, min el, max el)     :  180.00,   0.0,   0.0 
+      Default Minimum Range                                   : 0.0
+      Default Maximum Range                                   : 999999.0
+      Default Minimum Sun Separation Angle                    : 0.0
+      Default Maximum Sun Separation Angle                    : 180.0
+      Default Minimum Grazing Altitude                        : 60.0
+# 20 degree 'tiltback' in the X-Y plane
+      Platform Offset Angle                                   : -20.00
+# X-Z plane
+#      Gimbal Frame Offset Angle                               : 40.0
+# Y-Z plane
+#      Roll Offset Angle                                       : 20.0    
+#      Dedicated Transmitter                                   : user name   
+#      Outage Time Period [ALL]         (start,end)            : 1, 400
+#      Outage Time Period [CAPACITY]    (start,end)            : 1, 400
+#      Outage Time Period [CAPACITY, 2] (start,end)            : 1, 400
+#      Outage Time Period [user]       (start,end)            : 1, 1460
+#      Preferenced Antenna                                     : 1       
+   <USER_POINTING_ANTENNA_STOP>
+
+# UNCOMMENT TO HAVE TWO SEPARATE UPAs (MAKE ABOVE UPA HAVE CAPACITY OF 1 AND 
+# RENAME THE DESIGNATOR TO 'UPA-1')
+#   <USER_POINTING_ANTENNA_BEGIN>
+#      Antenna Designator                                      : UPA-2
+#      Communication Frequency Band                            : S_BAND
+#      Capacity                                                : 1
+#      Data Rate (Gbits/sec)                                   : 1.0
+#      Preparation Time                                        : 2
+      Default Minimum Elevation Angle                         : -180.0
+      Default Maximum Elevation Angle                         :  180.0
+      Azimuth Based Elevation Angles (az, min el, max el)     : -180.00,   0.0,   0.0 
+      Azimuth Based Elevation Angles (az, min el, max el)     :  -15.01,   0.0,   0.0 
+      Azimuth Based Elevation Angles (az, min el, max el)     :  -15.00, -40.0, -20.0 
+      Azimuth Based Elevation Angles (az, min el, max el)     :   15.00, -40.0, -20.0  
+      Azimuth Based Elevation Angles (az, min el, max el)     :   15.01,   0.0,   0.0 
+      Azimuth Based Elevation Angles (az, min el, max el)     :  180.00,   0.0,   0.0 
+      Default Minimum Range                                   : 0.0
+#      Default Maximum Range                                   : 999999.0
+#      Default Minimum Sun Separation Angle                    : 0.0
+#      Default Maximum Sun Separation Angle                    : 180.0
+#      Default Minimum Grazing Altitude                        : 60.0
+#      Platform Offset Angle                                   : -25.0 
+#   <USER_POINTING_ANTENNA_STOP>
+
+# UNCOMMENT THIS SECTION TO USE MULTI-HOP CAPABILITY
+#   <RELAY_POINTING_ANTENNA_BEGIN>
+#      Transmitting Relay Pointing Antenna                     : true
+#      Communication Frequency Band                            : X_BAND
+#      Capacity                                                : 1
+#      Data Rate (Gbits/sec)                                   : 1.0
+#      Default Minimum Elevation Angle                         : -180.0
+#      Default Maximum Elevation Angle                         :  180.0
+#      Default Minimum Range                                   : 0.0
+#      Default Maximum Range                                   : 999999.0
+#      Default Minimum Sun Separation Angle                    : 0.0
+#      Default Maximum Sun Separation Angle                    : 180.0
+#      Default Minimum Grazing Altitude                        : 60.0
+#   <RELAY_POINTING_ANTENNA_STOP>
+
+   <GROUND_POINTING_ANTENNA_BEGIN>
+      Communication Frequency Band                            : KA_BAND
+      Number Of Transmit Channels                             : 2
+      Preparation Time                                        : 5
+      Capacity                                                : 1
+      Data Rate (Gbits/sec)                                   : 1.0
+      Default Minimum Range                                   : 0.0
+      Default Maximum Range                                   : 99999.0
+      Default Minimum Sun Separation Angle                    : 0.0
+      Default Maximum Sun Separation Angle                    : 180.0
+      Precluded Receiver                                      : Ground Site
+   <GROUND_POINTING_ANTENNA_STOP>
+
+   <POSITION_GENERATION_BEGIN>
+      Orbiting Data Provider                                  : true
+      Position Generation Method (READ_MURAL/_OPS/_P470/J2J4) : J2J4
+      Epoch Date                                              : yyy/mm/dd
+      Epoch Time                                              : 00:00:00
+      Semi-Major Axis                                         : 22767.96
+      Eccentricity                                            : 0.00
+      Inclination                                             : 1.00
+      Argument of Perigee                                     : 0.0
+      Right Ascension                                         : 170.0
+      True Anomaly                                            : 0.0
+# Use when reading in initial state vectors
+#      Use Initial State Vectors                               : true
+#      Initial State Position Vector (ECI,EFC,LLA)             : X, Y, Z, ECI    
+#      Initial State Velocity Vector                           : X, Y, Z, ECI
+   <POSITION_GENERATION_STOP>
+
+   <LINK_GENERATION_BEGIN>
+      Link Path Method (READ/GENERATE)                        : GENERATE
+      Conjunction Method (READ/GENERATE)                      : GENERATE
+      Default Acquire Time                                    : 6
+      Default Droplink Time                                   : 2
+      Default Narrowband Conjunction Angle                    : 0.0
+      Default Wideband Conjunction Angle                      : 1.0
+#      Default Narrowband Conjunction Angle, Senders           :   1.0, 3
+#        Wideband Conjunction Angle [User1, User2]               :   2.0
+   <LINK_GENERATION_STOP>
+
+<RELAY_SATELLITE_OBJECT_END>
+
